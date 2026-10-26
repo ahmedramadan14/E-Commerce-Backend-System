@@ -1,0 +1,32 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "prod": "cross-env NODE_ENV=production node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "colors": "^1.4.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "nodemailer": "^9.0.1",
+    "sharp": "^0.34.5",
+    "slugify": "^1.6.9",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
