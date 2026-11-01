@@ -66,12 +66,15 @@ exports.getproduct = handlerFactory.getAll(productModel , 'product');
 // @desc    Create new product
 // @route   POST /api/v1/products
 // @access  Private
-exports.createproduct = handlerFactory.createOne(ProductModel);
+exports.createproduct = handlerFactory.createOne(ProductModel , 'reviews');
 
 // @desc    Get specific product by id
 // @route   GET /api/v1/products/:id
 // @access  Public
-exports.getproductById  = handlerFactory.getOne(ProductModel);
+exports.getproductById = handlerFactory.getOne(
+    ProductModel,
+    { path: 'reviews' }
+);
 
 // @desc    Update specific product
 // @route   PUT /api/v1/products/:id
